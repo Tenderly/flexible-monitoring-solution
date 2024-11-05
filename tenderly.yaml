@@ -1,0 +1,14 @@
+account_id: ""
+actions:
+  <ACCOUNT_SLUG>/<PROJECT_SLUG>:
+    runtime: v2
+    sources: actions
+    specs:
+      example:
+        description: This is just an example, but you can publish this action.
+        function: example:modularFn
+        trigger:
+          type: alert
+          alert: { <YOUR_ALERT_ID> }
+        execution_type: parallel
+project_slug: ""
